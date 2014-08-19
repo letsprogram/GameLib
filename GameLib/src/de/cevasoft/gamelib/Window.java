@@ -19,7 +19,7 @@ public class Window extends JFrame {
 
 	/**
 	 * @param width
-	 * Width in points (computed in 16/9 if 0)
+	 * Width in points
 	 * @param height
 	 * Height in points
 	 * @param scale
@@ -27,10 +27,18 @@ public class Window extends JFrame {
 	 */
 	public Window(int width, int height, int scale) {
 		super();
-		if(width == 0) width = height * 16 / 9;
 		this.setMaximumSize(new Dimension(width * scale, height * scale));
 		this.setMinimumSize(new Dimension(width * scale, height * scale));
 		this.setPreferredSize(new Dimension(width * scale, height * scale));
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
+
+	public Window(int width, int height) {
+		super();
+		this.setMaximumSize(new Dimension(width, height));
+		this.setMinimumSize(new Dimension(width, height));
+		this.setPreferredSize(new Dimension(width, height));
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+
 }
