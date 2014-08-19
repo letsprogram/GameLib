@@ -1,0 +1,7 @@
+X Add Sprite sheet
+X Create SpriteSheet class
+X Load sheet into BufferedImage of SpriteSheet class
+- Create Sprite class
+- Create AnimationFrame class as part of Sprite class
+- Import Image from Sprite sheet
+- Change colors of AnimationFrame

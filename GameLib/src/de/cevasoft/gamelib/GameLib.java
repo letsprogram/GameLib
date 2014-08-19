@@ -11,9 +11,11 @@ public class GameLib {
 	public static void main(String[] args) {
 		running = true;
 		
-		SceneView sceneView = new SceneView(320, 200);
+		SpriteSheet spriteSheet = new SpriteSheet(8);
+
+		SceneView sceneView = new SceneView(320, 200, 2);
 		
-		Window window = new Window(320, 200);
+		Window window = new Window(640, 400);
 		window.add(sceneView);
 		window.setVisible(true);
 		int tick = 0, frames = 0;
@@ -39,9 +41,10 @@ public class GameLib {
 				e.printStackTrace();
 			}
 			
-			for(int i = 0; i < 320 * 200; i++){
-				sceneView.pixels[i] = i + tick;
-			}
+//			for(int i = 0; i < 320 * 200; i++){
+//				sceneView.pixels[i] = i + tick;
+//			}
+
 			sceneView.draw();
 		}
 	}
