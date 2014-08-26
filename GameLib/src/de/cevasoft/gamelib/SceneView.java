@@ -20,7 +20,6 @@ public class SceneView extends Canvas {
 		this.scale = scale;
 		sceneView = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
 		pixels = ((DataBufferInt) sceneView.getRaster().getDataBuffer()).getData();
-		SpriteFrame testFrame = new SpriteFrame(spriteSheet, 0, 0);
 	}
 	
 	public void draw (){
